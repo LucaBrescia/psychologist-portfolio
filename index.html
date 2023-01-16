@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Dott.ssa Laura Romano - Psicologa</title>
 </head>
 <body>
-    <section class="hero is-white is-fullheight-with-navbar block" id="Home">
+    <section class="hero is-white is-fullheight-with-navbar block is-active" id="Home">
         <div class="hero-head">
-            <nav class="navbar card">
+            <nav class="navbar card block is-fixed-top" style="overflow: hidden; background-color: white;">
                 <div class="container">
                     <div class="navbar-brand is-size-4">
                         <a class="navbar-item">Dott.ssa Laura Romano</a>
-                        <span class="navbar-burger" data-target="navbarMenuHero"></span>
+                        <span class="navbar-burger" data-target="navbarMenuHeroB"></span>
                     </div>
-                    <div id="navbarMenuHeroB" class="navbar-menu">
+                    <div id="navbarMenuHeroB" class="navbar-menu controls">
                         <div class="navbar-end">
-                            <a href="#Home" class="navbar-item is-active">
+                            <a href="#Home" class="navbar-item control control-1 is-active">
                                 Home
                             </a>
-                            <a href="#About" class="navbar-item">
+                            <a href="#About" class="navbar-item control control-2">
                                 Chi sono
                             </a>
-                            <a href="#Services" class="navbar-item">
+                            <a href="#Services" class="navbar-item control control-3">
                                 Servizi
                             </a>
-                            <span href="#Contacts" class="navbar-item">
+                            <span href="#Contacts" class="navbar-item control control-4">
                                 <a href="#Contacts" class="button is-info">
                                     <span class="icon">
                                         <i class="fa-brands fa-telegram"></i>
@@ -94,7 +95,21 @@
             </div>
         </div>
     </section>
-    <section class="hero" id="Services">
+    <section class="hero sec2 py-6" id="About">
+        <div class="container is-vcentered is-justify-content-space-evenly p-6">
+            <p class="title is-2 is-spaced">Chi sono</p>
+            <article class="is-justify-content-space-between">
+                <p class="subtitle is-4">Sono una <span class="has-text-link">psicologa clinica</span> e <span class="has-text-link">specializzanda in psicoterapia</span>  cognitivo comportamentale</p>
+                <p class="subtitle is-4">Ho <span class="has-text-link">esperienza</span> nel sostegno educativo e formativo di minori, di età compresa fra la prima infanzia e adolescenza<br>Ciò mi ha permesso di arricchirmi a livello umano e sperimentarmi in diversi contesti sociali come la scuola e la comunità terapeutica</p>
+                <p class="subtitle is-4">Fin da piccola mi è sempre piaciuto ascoltare le storie delle altre persone in modo attento e silenzioso, rimanendo sempre un passo indietro<br>
+                    Il mio percorso di studi in psicologia mi ha aiutato a coltivare e mettere in campo questo mio interesse, dandomi la possibilità di essere in prima linea per aiutare gli altri</p>
+                <p class="subtitle is-4">Oggi <span class="has-text-link">sostengo</span> e <span class="has-text-link">aiuto</span> le persone, passo dopo passo, a ritrovare e potenziare la forza e la fiducia in loro stessi, soprattutto in momenti di particolare difficoltà<br>
+                    Lavorare con empatia e sensibilità è ciò che caratterizza il mio lavoro: cerco di immedesimarmi in chi mi sta di fronte, ascoltando e rispettando la sua storia e il suo vissuto personale</p>      
+            </article>
+        </div>   
+    </section>
+    <section class="hero is-link p-6"></section>
+    <section class="hero sec3 py-6" id="Services">
         <div class="container is-vcentered is-justify-content-space-evenly p-6">
             <div class="container is-two-fifths">
                 <p class="title is-2 is-spaced">Mi occupo di sostegno psicologico individuale</p>
@@ -146,20 +161,8 @@
             </div>
         </div>
     </section>
-    <section class="hero" id="About">
-        <div class="container is-vcentered is-justify-content-space-evenly p-6">
-            <p class="title is-2 is-spaced">Chi sono</p>
-            <article class="is-justify-content-space-between">
-                <p class="subtitle is-4">Sono una <span class="has-text-link">psicologa clinica</span> e <span class="has-text-link">specializzanda in psicoterapia</span>  cognitivo comportamentale</p>
-                <p class="subtitle is-4">Ho <span class="has-text-link">esperienza</span> nel sostegno educativo e formativo di minori, di età compresa fra la prima infanzia e adolescenza<br>Ciò mi ha permesso di arricchirmi a livello umano e sperimentarmi in diversi contesti sociali come la scuola e la comunità terapeutica</p>
-                <p class="subtitle is-4">Fin da piccola mi è sempre piaciuto ascoltare le storie delle altre persone in modo attento e silenzioso, rimanendo sempre un passo indietro<br>
-                    Il mio percorso di studi in psicologia mi ha aiutato a coltivare e mettere in campo questo mio interesse, dandomi la possibilità di essere in prima linea per aiutare gli altri</p>
-                <p class="subtitle is-4">Oggi <span class="has-text-link">sostengo</span> e <span class="has-text-link">aiuto</span> le persone, passo dopo passo, a ritrovare e potenziare la forza e la fiducia in loro stessi, soprattutto in momenti di particolare difficoltà<br>
-                    Lavorare con empatia e sensibilità è ciò che caratterizza il mio lavoro: cerco di immedesimarmi in chi mi sta di fronte, ascoltando e rispettando la sua storia e il suo vissuto personale</p>      
-            </article>
-        </div>   
-    </section>
-    <section class="hero" id="Contacts">
+    <section class="hero is-link p-6"></section>
+    <section class="hero sec4 py-6" id="Contacts">
         <div class="container is-vcentered is-justify-content-space-evenly p-6">
             <p class="title is-2 is-spaced">Contatti</p>
             <p class="subtitle is-4">Per maggiori informazioni puoi contattarmi ad uno dei miei recapiti oppure compilando il form qui di seguito</p>
@@ -230,6 +233,7 @@
 
     </section>
     <script src="navbar.js"></script>
+    <script src="app.js"></script>  
 </body>
 <footer class="has-background-grey-dark has-text-centered has-text-white py-5">Copyright 2023, Laura Romano - Ordine degli psicologi della Lombardia n° 23853 - P.Iva 04338470984</footer> 
 </html>

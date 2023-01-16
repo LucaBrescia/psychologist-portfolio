@@ -1,0 +1,36 @@
+.active:not(.controls .control){
+    display: block;
+    animation: scaleAnim .8s ease-out;
+    @keyframes scaleAnim {
+        0%{
+            transform: translateY(100%) scale(1);
+        }
+
+        100%{
+            transform: translateY(0) scale(1);
+        }        
+        
+    }
+}
+
+.active-btn {
+    background-color: var(--color-primary);
+    i { color: var(--color-white); }
+}
+
+.sec1{
+    display: none;
+    transform: translateY(0) scale(1);
+}
+.sec2{
+    display: none;
+    transform: translateY(0) scale(1);
+}
+.sec3{
+    display: none;
+    transform: translateY(0) scale(1);
+}
+.sec4{
+    display: none;
+    transform: translateY(0) scale(1);
+}
