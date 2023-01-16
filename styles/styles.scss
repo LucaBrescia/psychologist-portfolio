@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+$font-family: 'Raleway', sans-serif; 
+$family-sans-serif: 'Raleway';
+
+$primary: #FFDDD2;
+$link: #E29578;
+
+@import "../node_modules/bulma/bulma.sass";
+
 .active:not(.controls .control){
     display: block;
     animation: scaleAnim .8s ease-out;
@@ -34,3 +44,5 @@
     display: none;
     transform: translateY(0) scale(1);
 }
+
+

@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Dott.ssa Laura Romano - Psicologa</title>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    --><title>Dott.ssa Laura Romano - Psicologa</title>
 </head>
 <body>
     <section class="hero is-white is-fullheight-with-navbar block is-active" id="Home">
@@ -30,7 +33,7 @@
                                 Servizi
                             </a>
                             <span href="#Contacts" class="navbar-item control control-4">
-                                <a href="#Contacts" class="button is-info">
+                                <a href="#Contacts" class="button is-link">
                                     <span class="icon">
                                         <i class="fa-brands fa-telegram"></i>
                                     </span>
@@ -50,7 +53,7 @@
                         <p class="title is-1">
                             Dott.ssa Laura Romano
                         </p>
-                        <p class="subtitle is-2 has-text-link">
+                        <p class="subtitle is-2 has-text-primary-dark is-family-primary">
                             Psicologa clinica
                         </p>
                         <p class="subtitle is-4 ">
@@ -59,32 +62,77 @@
                         <p class="subtitle is-4">
                             Mi occupo di sostegno psicologico principalmente rivolto a giovani adulti e adulti.
                         </p>
-                        <a href="#Discover" class="button is-info">
+                        <a href="#Discover" class="button is-link js-modal-trigger" data-target="modal-js">
                             <span>Scopri di più</span>
                         </a>
                     </div>
-                    <div class="column IS-HALF">
-                        <img src="" alt="">
+                    <div class="column is-one-fifth"></div>
+                    <div class="column">
+                        <img src="/img/laura-romano.jpg" alt="" style="border-radius: 5%;">
                     </div>
                 </div>
             </div>
         </div>
+        <div class="modal" id="modal-js">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                <p class="modal-card-title">La mia formazione professionale</p>
+                <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="columns">
+                        <div class="column is-vertical is-one-fifth px-5">
+                            <header class="timeline-header is-spaced py-6">
+                                <span class="tag is-medium is-primary">2022</span>
+                            </header>
+                            <header class="timeline-header is-spaced py-6">
+                                <span class="tag is-medium is-primary">2021</span>
+                            </header>
+                            <header class="timeline-header is-spaced py-6">
+                                <span class="tag is-medium is-primary">2019</span>
+                            </header> 
+                            <header class="timeline-header is-spaced py-6">
+                                <span class="tag is-medium is-primary">2017</span>
+                            </header>
+                        </div>
+                        <div class="column is-vertical">
+                            <div class="timeline-item is-justify-content-center py-5">
+                                <p class="is-justify-content-center">Iscrizione alla Scuola di specializzazione in Psicoterapia cognitivo comportamentale presso AcaBS - Academy of Behavioural Scencies</p>
+                            </div>                    
+                            <div class="timeline-item is-justify-content-center py-6">
+                                <p class="is-justify-content-center">Abilitazione all'esercizio della professione di psicologa - Iscrizione all' Ordine degli psicologi della Lombardia n° 23853</p>
+                            </div>                         
+                            <div class="timeline-item is-justify-content-center py-5">
+                                <p class="is-justify-content-center">Laurea magistrale in Psicologia degli Interventi Clinici nei Contesti Sociali presso Università Cattolica del Sacro Cuore di Brescia</p>
+                            </div>   
+                            <div class="timeline-item is-justify-content-center py-5">
+                                <p class="is-justify-content-center py-4">Laurea triennale in Scienze e Tecniche Psicologiche presso Università Cattolica del Sacro Cuore di Brescia</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+
+                </footer>
+            </div>
+        </div>
         <div class="hero-foot">
             <nav class="tabs">
-                <div class="container has-text-link">
+                <div class="container has-text-link px-0">
                     <ul>
                         <li>
-                            <a href="https://www.instagram.com/lauraromano_psicologa/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/lauraromano_psicologa/" title="Il mio profilo Instagram" ><i class="fab fa-instagram" style="scale: 125%;"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.guidapsicologi.it/studio/dottoressa-laura-romano"><i class="fa-solid fa-calendar-days"></i></a>
+                            <a href="https://www.guidapsicologi.it/studio/dottoressa-laura-romano" title="Prenota un colloquio"><i class="fa-solid fa-calendar-days" style="scale: 120%;"></i></a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </section>
-    <section class="hero is-link py-4">
+    <section class="hero is-primary">
         <div class="hero-body">
             <div class="columns is-vcentered">
                 <div class="column is-two-third">
@@ -105,33 +153,33 @@
         <div class="container is-vcentered is-justify-content-space-evenly p-6">
             <p class="title is-2 is-spaced">Chi sono</p>
             <article class="is-justify-content-space-between">
-                <p class="subtitle is-4">Sono una <span class="has-text-link">psicologa clinica</span> e <span class="has-text-link">specializzanda in psicoterapia</span> cognitivo comportamentale.</p>
-                <p class="subtitle is-4">Ho <span class="has-text-link">esperienza</span> nel sostegno educativo e formativo di minori, di età compresa fra la prima infanzia e adolescenza.<br>Ciò mi ha permesso di arricchirmi a livello umano e sperimentarmi in diversi contesti sociali come la scuola e la comunità terapeutica.</p>
+                <p class="subtitle is-4">Sono una <span class="has-text-primary-dark">psicologa clinica</span> e <span class="has-text-primary-dark">specializzanda in psicoterapia</span> cognitivo comportamentale.</p>
+                <p class="subtitle is-4">Ho <span class="has-text-primary-dark">esperienza</span> nel sostegno educativo e formativo di minori, di età compresa fra la prima infanzia e adolescenza.<br>Ciò mi ha permesso di arricchirmi a livello umano e sperimentarmi in diversi contesti sociali come la scuola e la comunità terapeutica.</p>
                 <p class="subtitle is-4">Fin da piccola mi è sempre piaciuto ascoltare le storie delle altre persone in modo attento e silenzioso, rimanendo sempre un passo indietro.<br>
                     Il mio percorso di studi in psicologia mi ha aiutato a coltivare e mettere in campo questo mio interesse, dandomi la possibilità di essere in prima linea per aiutare gli altri.</p>
-                <p class="subtitle is-4">Oggi <span class="has-text-link">sostengo</span> e <span class="has-text-link">aiuto</span> le persone, passo dopo passo, a ritrovare e potenziare la forza e la fiducia in loro stessi, soprattutto in momenti di particolare difficoltà.<br>
+                <p class="subtitle is-4">Oggi <span class="has-text-primary-dark">sostengo</span> e <span class="has-text-primary-dark">aiuto</span> le persone, passo dopo passo, a ritrovare e potenziare la forza e la fiducia in loro stessi, soprattutto in momenti di particolare difficoltà.<br>
                     Lavorare con empatia e sensibilità è ciò che caratterizza il mio lavoro: cerco di immedesimarmi in chi mi sta di fronte, ascoltando e rispettando la sua storia e il suo vissuto personale.</p>      
-                <a href="#Discover" class="button is-info">
+                <a href="#Discover" class="button is-link">
                     <span>Scopri di più</span>
                 </a>
             </article>
         </div>   
     </section>
-    <section class="hero is-link p-6"></section>
-    <section class="hero sec3 py-6" id="Services">
+    <section class="hero sec3 py-4" id="Services">
         <div class="container is-vcentered is-justify-content-space-evenly p-6">
-            <p class="title is-2 is-spaced">Mi occupo di</p>
-            <div class="columns box is-link">
-               <div class="column is-one-third py-6">
+            <p class="title is-2 is-spaced py-4">Mi occupo di</p>
+            <div class="columns box is-vcentered notification">
+               <div class="column is-one-third py-6 has-text-justified">
                     <p class="title is-3 py-4">SOSTEGNO PSICOLOGICO INDIVIDUALE</p>
-                    <p class="subtitle is-4 py-4">In <span class="has-text-link">studio</span> e <span class="has-text-link">online</span></p>
+                    <p class="subtitle is-4 py-4">In <span class="has-text-primary-dark">studio</span> e <span class="has-text-primary-dark">online</span></p>
                 </div> 
-                <div class="column is-two-third box">
-                    
+                <div class="column">
+                    <img src="/img/therapy.jpg" alt="" class="is-fullheight is-fullwidth" style="opacity: 0.7;">
+                    <p class="has-text-centered">Source <a href="https://it.freepik.com/foto-gratuito/donna-con-le-mani-insieme-a-parlare-con-il-consigliere_11241676.htm#query=Psicoterapia&position=15&from_view=search&track=sph">Freepik</a></p>
                 </div>
             </div>
             <div class="container py-6">
-                <p class="subtitle is-4">Tratto principalmente le seguenti <span class="is-bold">aree</span>:</p>
+                <p class="subtitle is-4">Tratto principalmente le seguenti <span class="has-text-weight-bold">aree</span>:</p>
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
                             <article class="tile is-child box notification">
@@ -176,7 +224,6 @@
             </div>
         </div>
     </section>
-    <section class="hero is-link p-6"></section>
     <section class="hero sec4 py-6" id="Contacts">
         <div class="container is-vcentered is-justify-content-space-evenly p-6">
             <p class="title is-2 is-spaced">Contatti</p>
@@ -247,7 +294,6 @@
         </div> 
 
     </section>
-    <script src="navbar.js"></script>
     <script src="app.js"></script>  
 </body>
 <footer class="has-background-grey-dark has-text-centered has-text-white py-5">Copyright 2023, Laura Romano - Ordine degli psicologi della Lombardia n° 23853 - P.Iva 04338470984</footer> 
