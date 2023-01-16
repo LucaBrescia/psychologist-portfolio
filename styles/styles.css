@@ -10309,28 +10309,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
-.active:not(.controls .control) {
-  display: block;
-  -webkit-animation: scaleAnim 0.8s ease-out;
-          animation: scaleAnim 0.8s ease-out;
-}
-@-webkit-keyframes scaleAnim {
-  0% {
-    transform: translateY(100%) scale(1);
-  }
-  100% {
-    transform: translateY(0) scale(1);
-  }
-}
-@keyframes scaleAnim {
-  0% {
-    transform: translateY(100%) scale(1);
-  }
-  100% {
-    transform: translateY(0) scale(1);
-  }
-}
-
 .active-btn {
   background-color: var(--color-primary);
 }
@@ -10338,22 +10316,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: var(--color-white);
 }
 
-.sec1 {
-  display: none;
-  transform: translateY(0) scale(1);
+.mybackground {
+  background-image: url("../img/home-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.sec2 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
-
-.sec3 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
-
-.sec4 {
-  display: none;
-  transform: translateY(0) scale(1);
+@media (max-width: 767px) { /* <== You can change this break point as per your  needs */
+  .reverse-columns {
+    flex-direction: column-reverse;
+    display: flex;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -13,42 +13,41 @@
     --><title>Dott.ssa Laura Romano - Psicologa</title>
 </head>
 <body>
-    <section class="hero is-white is-fullheight-with-navbar block is-active" id="Home">
-        <div class="hero-head">
-            <nav class="navbar card block is-fixed-top" style="overflow: hidden; background-color: white;">
-                <div class="container">
-                    <div class="navbar-brand is-size-4">
-                        <a class="navbar-item">Dott.ssa Laura Romano</a>
-                        <span class="navbar-burger" data-target="navbarMenuHeroB"></span>
-                    </div>
-                    <div id="navbarMenuHeroB" class="navbar-menu controls">
-                        <div class="navbar-end">
-                            <a href="#Home" class="navbar-item control control-1 is-active">
-                                Home
-                            </a>
-                            <a href="#About" class="navbar-item control control-2">
-                                Chi sono
-                            </a>
-                            <a href="#Services" class="navbar-item control control-3">
-                                Servizi
-                            </a>
-                            <span href="#Contacts" class="navbar-item control control-4">
-                                <a href="#Contacts" class="button is-link">
-                                    <span class="icon">
-                                        <i class="fa-brands fa-telegram"></i>
-                                    </span>
-                                    <span>Contatti</span>
-                                </a>
-                                
-                            </span>
-                        </div>
-                    </div> 
-                </div>
-            </nav>
-        </div>
-        <div class="hero-body is-fullheight">
+    <div class="hero-head">
+        <nav class="navbar card block is-fixed-top" style="overflow: hidden; background-color: white;">
             <div class="container">
-                <div class="columns is-vcentered">
+                <div class="navbar-brand is-size-4">
+                    <a class="navbar-item">Dott.ssa Laura Romano</a>
+                    <span class="navbar-burger" data-target="navbarMenuHeroB"></span>
+                </div>
+                <div id="navbarMenuHeroB" class="navbar-menu">
+                    <div class="navbar-end controls">
+                        <a href="#Home" class="navbar-item mycontrol mycontrol-1 is-active" data-target="Home">
+                            Home
+                        </a>
+                        <a href="#About" class="navbar-item mycontrol mycontrol-2" data-target="About">
+                            Chi sono
+                        </a>
+                        <a href="#Services" class="navbar-item mycontrol mycontrol-3" data-target="Services">
+                            Servizi
+                        </a>
+                        <span href="#Contacts" class="navbar-item mycontrol mycontrol-4" data-target="Contacts">
+                            <a href="#Contacts" class="button is-link">
+                                <span class="icon">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </span>
+                                <span>Contatti</span>
+                            </a> 
+                        </span>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+    </div>
+    <section class="hero mybackground is-fullheight is-active py-4" id="Home">
+        <div class="hero-body is-fullheight">
+            <div class="container is-justify-content-center">
+                <div class="columns is-vcentered reverse-columns">
                     <div class="column is-half">
                         <p class="title is-1">
                             Dott.ssa Laura Romano
@@ -66,58 +65,16 @@
                             <span>Scopri di più</span>
                         </a>
                     </div>
-                    <div class="column is-one-fifth"></div>
-                    <div class="column">
-                        <img src="/img/laura-romano.jpg" alt="" style="border-radius: 5%;">
+                    <div class="column is-justify-content-center">
+                        <div class="has-text-centered py-6">
+                            <img src="/img/laura-romano.jpg" alt="" style="border-radius: 5%; scale: none;">
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal" id="modal-js">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-                <header class="modal-card-head">
-                <p class="modal-card-title">La mia formazione professionale</p>
-                <button class="delete" aria-label="close"></button>
-                </header>
-                <section class="modal-card-body">
-                    <div class="columns">
-                        <div class="column is-vertical is-one-fifth px-5">
-                            <header class="timeline-header is-spaced py-6">
-                                <span class="tag is-medium is-primary">2022</span>
-                            </header>
-                            <header class="timeline-header is-spaced py-6">
-                                <span class="tag is-medium is-primary">2021</span>
-                            </header>
-                            <header class="timeline-header is-spaced py-6">
-                                <span class="tag is-medium is-primary">2019</span>
-                            </header> 
-                            <header class="timeline-header is-spaced py-6">
-                                <span class="tag is-medium is-primary">2017</span>
-                            </header>
-                        </div>
-                        <div class="column is-vertical">
-                            <div class="timeline-item is-justify-content-center py-5">
-                                <p class="is-justify-content-center">Iscrizione alla Scuola di specializzazione in Psicoterapia cognitivo comportamentale presso AcaBS - Academy of Behavioural Scencies</p>
-                            </div>                    
-                            <div class="timeline-item is-justify-content-center py-6">
-                                <p class="is-justify-content-center">Abilitazione all'esercizio della professione di psicologa - Iscrizione all' Ordine degli psicologi della Lombardia n° 23853</p>
-                            </div>                         
-                            <div class="timeline-item is-justify-content-center py-5">
-                                <p class="is-justify-content-center">Laurea magistrale in Psicologia degli Interventi Clinici nei Contesti Sociali presso Università Cattolica del Sacro Cuore di Brescia</p>
-                            </div>   
-                            <div class="timeline-item is-justify-content-center py-5">
-                                <p class="is-justify-content-center py-4">Laurea triennale in Scienze e Tecniche Psicologiche presso Università Cattolica del Sacro Cuore di Brescia</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <footer class="modal-card-foot">
-
-                </footer>
-            </div>
-        </div>
-        <div class="hero-foot">
+        <div class="hero-foot is-transparent">
             <nav class="tabs">
                 <div class="container has-text-link px-0">
                     <ul>
@@ -132,10 +89,10 @@
             </nav>
         </div>
     </section>
-    <section class="hero is-primary">
+    <section class="hero is-primary py-4" id="Cit">
         <div class="hero-body">
-            <div class="columns is-vcentered">
-                <div class="column is-two-third">
+            <div class="columns is-vcentered is-centered">
+                <div class="column is-two-third is-centered">
                     <p class="title is-italic is-4">
                         "Preferisco di gran lunga pensare ai miei pazienti e a me stesso come compagni di viaggio, un termine che abolisce le distinzioni tra "loro" coloro che soffrono e "noi" guaritori."
                     </p>
@@ -149,7 +106,7 @@
             </div>
         </div>
     </section>
-    <section class="hero sec2 py-6" id="About">
+    <section class="hero mybackground py-6 is-hidden" id="About">
         <div class="container is-vcentered is-justify-content-space-evenly p-6">
             <p class="title is-2 is-spaced">Chi sono</p>
             <article class="is-justify-content-space-between">
@@ -159,13 +116,13 @@
                     Il mio percorso di studi in psicologia mi ha aiutato a coltivare e mettere in campo questo mio interesse, dandomi la possibilità di essere in prima linea per aiutare gli altri.</p>
                 <p class="subtitle is-4">Oggi <span class="has-text-primary-dark">sostengo</span> e <span class="has-text-primary-dark">aiuto</span> le persone, passo dopo passo, a ritrovare e potenziare la forza e la fiducia in loro stessi, soprattutto in momenti di particolare difficoltà.<br>
                     Lavorare con empatia e sensibilità è ciò che caratterizza il mio lavoro: cerco di immedesimarmi in chi mi sta di fronte, ascoltando e rispettando la sua storia e il suo vissuto personale.</p>      
-                <a href="#Discover" class="button is-link">
+                <a href="#Discover" class="button is-link js-modal-trigger" data-target="modal-js">
                     <span>Scopri di più</span>
                 </a>
             </article>
-        </div>   
+        </div>  
     </section>
-    <section class="hero sec3 py-4" id="Services">
+    <section class="hero mybackground py-4 is-hidden" id="Services">
         <div class="container is-vcentered is-justify-content-space-evenly p-6">
             <p class="title is-2 is-spaced py-4">Mi occupo di</p>
             <div class="columns box is-vcentered notification">
@@ -224,7 +181,7 @@
             </div>
         </div>
     </section>
-    <section class="hero sec4 py-6" id="Contacts">
+    <section class="hero mybackground py-6 is-hidden" id="Contacts">
         <div class="container is-vcentered is-justify-content-space-evenly p-6">
             <p class="title is-2 is-spaced">Contatti</p>
             <p class="subtitle is-4">Contattami per la tua richiesta ad uno dei miei recapiti oppure compilando il form qui di seguito.</p>
@@ -251,17 +208,17 @@
             <div class="columns is-fullwidth py-4">
                 <div class="column is-one-fifth"></div>
                 <div class="column box">
-                    <form action="">
+                    <form action="https://formsubmit.co/lauraromano01@outlook.it" method="POST">
                         <div class="field">
                             <label class="label is-medium">Nome</label>
                             <div class="control">
-                                <input class="input is-medium" type="text" placeholder="Il tuo nome">
+                                <input class="input is-medium" type="text" placeholder="Il tuo nome" required>
                             </div>
                         </div>
                         <div class="field">
                             <label class="label is-medium">Email</label>
                             <div class="control has-icons-left has-icons-right">
-                                <input class="input is-medium" type="email" placeholder="prova@esempio.com">
+                                <input class="input is-medium" type="email" placeholder="prova@esempio.com" required>
                                 <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
                                 </span>
@@ -270,11 +227,19 @@
                         <div class="field">
                             <label class="label is-medium">Messaggio</label>
                             <div class="control">
-                                <textarea class="textarea is-medium" placeholder="Scrivi qui la tua richiesta..."></textarea>
+                                <textarea class="textarea is-medium" required="required" placeholder="Scrivi qui la tua richiesta..."></textarea>
                             </div>
                         </div>
                         <div class="control">
-                            <button class="button is-link is-medium">Invia</button>
+                            <button type="submit" class="button is-link is-medium">Invia</button>
+                        </div>
+                        <div class="form-input-box-options" style="max-height:0;">
+                            <input type="hidden" name="_next" value="https://lucabrescia.dev/pages/thankyou.html">
+                            <input type="hidden" name="_subject" value="lauraromano.com: Nuovo messaggio">
+                        </div>
+                        <div class="form-input-box-options" style="max-height:0;">
+                            <input type="hidden" name="_autoresponse" value="Graze per la tua richiesta. Eccoti una copia del messaggio.">
+                            <input type="hidden" name="_template" value="table">
                         </div>
                     </form> 
                 </div>
@@ -292,7 +257,52 @@
             </div>
         </div>    
         </div> 
+    </section>
+    <section class="">
+        <div class="modal" id="modal-js">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                <p class="modal-card-title">La mia formazione professionale</p>
+                <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="columns">
+                        <div class="column is-vertical is-one-fifth px-5">
+                            <header class="timeline-header is-spaced py-6">
+                                <span class="tag is-medium is-primary">2022</span>
+                            </header>
+                            <header class="timeline-header is-spaced py-6">
+                                <span class="tag is-medium is-primary">2021</span>
+                            </header>
+                            <header class="timeline-header is-spaced py-6">
+                                <span class="tag is-medium is-primary">2019</span>
+                            </header> 
+                            <header class="timeline-header is-spaced py-6">
+                                <span class="tag is-medium is-primary">2017</span>
+                            </header>
+                        </div>
+                        <div class="column is-vertical">
+                            <div class="timeline-item is-justify-content-center py-5">
+                                <p class="is-justify-content-center">Iscrizione alla Scuola di specializzazione in Psicoterapia cognitivo comportamentale presso AcaBS - Academy of Behavioural Scencies</p>
+                            </div>                    
+                            <div class="timeline-item is-justify-content-center py-6">
+                                <p class="is-justify-content-center">Abilitazione all'esercizio della professione di psicologa e iscrizione all'Ordine degli P  sicologi della Lombardia n° 23853</p>
+                            </div>                         
+                            <div class="timeline-item is-justify-content-center py-5">
+                                <p class="is-justify-content-center">Laurea magistrale in Psicologia degli Interventi Clinici nei Contesti Sociali presso Università Cattolica del Sacro Cuore di Brescia</p>
+                            </div>   
+                            <div class="timeline-item is-justify-content-center py-5">
+                                <p class="is-justify-content-center py-4">Laurea triennale in Scienze e Tecniche Psicologiche presso Università Cattolica del Sacro Cuore di Brescia</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
 
+                </footer>
+            </div>
+        </div>
     </section>
     <script src="app.js"></script>  
 </body>

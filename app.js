@@ -1,6 +1,5 @@
 const sections = document.querySelectorAll('.section')
-const secBtns = document.querySelectorAll('.controls')
-const secBtn = document.querySelectorAll('.control')
+const secBtn = document.querySelectorAll('.mycontrol')
 const allSection = document.querySelector('.main-content')
 
 // Modal js trigger
@@ -47,38 +46,36 @@ document.addEventListener('DOMContentLoaded', () => {
         closeAllModals();
       }
     });
+
+    secBtn.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+            secBtn.forEach(($el) => {
+                const $target = document.getElementById($el.dataset.target);
+                if($target != null && $target.classList.contains('is-active')){
+                    $target.classList.remove('is-active');
+                    $target.classList.add('is-hidden');
+                    if($target.id == 'Home'){
+                        const $cit = document.getElementById('Cit');
+                        $cit.classList.remove('is-active');
+                        $cit.classList.add('is-hidden');
+                    }
+                }
+            });
+            const $actual = document.getElementById(btn.dataset.target);
+            $actual.classList.remove('is-hidden');
+            $actual.classList.add('is-active');
+            if($actual.id == 'Home'){
+                const $cit = document.getElementById('Cit');
+                $cit.classList.remove('is-hidden');
+                $cit.classList.add('is-active');
+            }
+            
+          
+        });
+    });
+
   });
 
 // ------------------
 
 
-
-function PageTransitions(){
-    for(let i = 0; i < secBtn.length; i++){
-        secBtn[i].addEventListener('click', function(){
-            let currentBtn = document.querySelectorAll('.is-active');
-            currentBtn[0].className = currentBtn[0].className.replace('is-active', '');
-            this.className += ' is-active';
-        });
-    }
-
-    allSection.addEventListener('click', (e) => {
-        const id = e.target.dataset.id;
-        if(id){
-            secBtns.forEach((btn) => {
-                btn.classList.remove('active')
-            })
-
-            e.target.classList.add('active')
-
-            sections.forEach((section) =>{
-                section.classList.remove('active')
-            })
-
-            const element = document.getElementById(id);
-            element.classList.add('active');
-        }
-    });
-}
-
-PageTransitions();
