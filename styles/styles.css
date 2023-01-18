@@ -10316,6 +10316,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: var(--color-white);
 }
 
+.mycit {
+  background-image: url("../img/cit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .mybackground {
   background-image: url("../img/home-bg.svg");
   background-repeat: no-repeat;
