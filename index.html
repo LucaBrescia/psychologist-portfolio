@@ -18,9 +18,9 @@
             <div class="container">
                 <div class="navbar-brand is-size-4">
                     <a class="navbar-item">Dott.ssa Laura Romano</a>
-                    <span class="navbar-burger" data-target="navbarMenuHeroB"></span>
+                    <span class="navbar-burger" data-target="navbarMenuHeroB" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }"></span>
                 </div>
-                <div id="navbarMenuHeroB" class="navbar-menu">
+                <div id="navbarMenuHeroB" class="navbar-menu" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }">
                     <div class="navbar-end controls">
                         <a href="#Home" class="navbar-item mycontrol mycontrol-1 is-active" data-target="Home">
                             Home
@@ -79,13 +79,13 @@
         </div>
         <div class="hero-foot is-transparent">
             <nav class="tabs">
-                <div class="container has-text-link px-0">
+                <div class="container px-0">
                     <ul>
                         <li>
-                            <a href="https://www.instagram.com/lauraromano_psicologa/" title="Il mio profilo Instagram" ><i class="fab fa-instagram" style="scale: 125%;"></i></a>
+                            <a href="https://www.instagram.com/lauraromano_psicologa/" title="Il mio profilo Instagram" ><i class="fab fa-instagram has-text-link" style="scale: 125%;"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.guidapsicologi.it/studio/dottoressa-laura-romano" title="Prenota un colloquio"><i class="fa-solid fa-calendar-days" style="scale: 120%;"></i></a>
+                            <a href="https://www.guidapsicologi.it/studio/dottoressa-laura-romano" title="Prenota un colloquio"><i class="fa-solid fa-calendar-days has-text-link" style="scale: 120%;"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -150,7 +150,7 @@
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
                         <article class="tile is-child box notification">
-                            <p class="title has-text-centered is-4">Crisi e gestione emotiva</p>
+                            <p class="title has-text-centered py-2 is-4">Crisi e gestione emotiva</p>
                         </article>
                     </div>
                     <div class="tile is-parent">
@@ -191,7 +191,7 @@
             <div class="container py-6">
                 <div class="tile is-ancestor">
                     <div class="tile is-parent">
-                        <article class="tile is-child box">
+                        <article class="tile is-child box notification">
                             <div class="columns">
                                 <div class="column is-one-fifth has-text-centered"><i class="title is-5 fa-solid fa-phone"></i></div>
                                 <div class="column is-four-fifths"><p class="title has-text-centered is-5">333 8978029</p> </div>
@@ -199,7 +199,7 @@
                         </article>                 
                     </div>
                     <div class="tile is-parent">
-                        <article class="tile is-child box">
+                        <article class="tile is-child box notification">
                             <div class="columns">
                                 <div class="column is-one-fifth has-text-centered"><i class="title is-5 fa-solid fa-envelope"></i></div>
                                 <div class="column is-four-fifths"><p class="title has-text-centered is-5">lauraromano01@outlook.it</p> </div>
@@ -210,7 +210,7 @@
             </div>
             <div class="columns is-fullwidth py-4">
                 <div class="column is-one-fifth"></div>
-                <div class="column box">
+                <div class="column box notification">
                     <form action="https://formsubmit.co/237d3c5064e5b88aadf7a56ac420c9cf" method="POST">
                         <div class="field">
                             <label class="label is-medium">Nome</label>
@@ -250,7 +250,7 @@
             </div>
         <div class="container">
             <p class="title is-4">Ricevo presso</p>
-            <div class="columns">
+            <div class="columns box notification">
                 <div class="column is-half" style="min-height: 450px;">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.014517652128!2d10.20634041545388!3d45.610352231700524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781794d39ad1841%3A0x6c6d55d6669ad230!2sCentro%20HUMANS!5e0!3m2!1sit!2sit!4v1673810021975!5m2!1sit!2sit" style="border:0; width: 100%; height: 100%; min-height: 450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -327,5 +327,5 @@
     </section>
     <script src="app.js"></script>  
 </body>
-<footer class="has-background-grey-dark has-text-centered has-text-white py-5">Copyright 2023, Laura Romano - Ordine degli psicologi della Lombardia n° 23853 - P.Iva 04338470984</footer> 
+<footer class="has-background-grey-dark has-text-centered has-text-white py-5 px-5">Copyright 2023, Laura Romano - Ordine degli psicologi della Lombardia n° 23853 - P.Iva 04338470984</footer> 
 </html>
