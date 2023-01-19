@@ -2,6 +2,9 @@ const sections = document.querySelectorAll('.section')
 const secBtn = document.querySelectorAll('.mycontrol')
 const allSection = document.querySelector('.main-content')
 
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
 // Modal js trigger
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
@@ -69,14 +72,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 $cit.classList.remove('is-hidden');
                 $cit.classList.add('is-active');
             }
-            
+            // Close burger
+            $navbarBurgers.forEach(el =>{
+              if(el.classList.contains('is-active')){
+                 el.click();
+              }
+            });
           
         });
     });
 
-
-      // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
       // Add a click event on each of them
       $navbarBurgers.forEach( el => {

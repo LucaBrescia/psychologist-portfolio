@@ -24,18 +24,18 @@
                         <span aria-hidden="true"></span>
                       </a>
                 </div>
-                <div id="navbarMenuHeroB" class="navbar-menu" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }">
+                <div id="navbarMenuHeroB" class="navbar-menu">
                     <div class="navbar-end controls">
-                        <a href="#Home" class="navbar-item mycontrol mycontrol-1 is-active" data-target="Home">
+                        <a href="#Home" class="navbar-item mycontrol mycontrol-1 is-active" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }" data-target="Home">
                             Home
                         </a>
-                        <a href="#About" class="navbar-item mycontrol mycontrol-2" data-target="About">
+                        <a href="#About" class="navbar-item mycontrol mycontrol-2" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }" data-target="About">
                             Chi sono
                         </a>
-                        <a href="#Services" class="navbar-item mycontrol mycontrol-3" data-target="Services">
+                        <a href="#Services" class="navbar-item mycontrol mycontrol-3" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }" data-target="Services">
                             Servizi
                         </a>
-                        <span href="#Contacts" class="navbar-item mycontrol mycontrol-4" data-target="Contacts">
+                        <span href="#Contacts" class="navbar-item mycontrol mycontrol-4" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }" data-target="Contacts">
                             <a href="#Contacts" class="button is-link">
                                 <span class="icon">
                                     <i class="fa-brands fa-telegram"></i>
@@ -136,7 +136,7 @@
         <div class="container is-vcentered is-justify-content-space-evenly px-6">
             <p class="title is-2 is-spaced py-6">Mi occupo di</p>
             <div class="columns box is-vcentered notification">
-               <div class="column is-one-third has-text-justified">
+               <div class="column is-one-third">
                     <p class="title is-3 py-4">SOSTEGNO PSICOLOGICO INDIVIDUALE</p>
                     <p class="subtitle is-4 py-4">In <span class="has-text-primary-dark">studio</span> e <span class="has-text-primary-dark">online</span></p>
                 </div> 
@@ -152,14 +152,14 @@
                             <article class="tile is-child box notification">
                                 <p class="title has-text-centered py-2 is-4">Depressione</p>
                                 <figure class="image is-4by3">
-                                    <img src="img/depression.jpg" alt="" style="opacity: 70%;">
+                                    <img src="img/bad-relation.jpg" alt="" style="opacity: 70%;">
                                 </figure>
                             </article>
                         </div>
                     </div>
                     <div class="tile">
                         <div class="tile is-parent">
-                            <div class="tile is-child box notification"></article>
+                            <div class="tile is-child box notification">
                                 <div class="columns reverse-columns">
                                     <div class="column is-half">
                                         <figure class="image is-center is-3by4">
@@ -195,7 +195,7 @@
                         <article class="tile is-child box notification">
                             <p class="title has-text-centered py-2 is-4">Difficoltà relazionali</p>
                             <figure class="image is-4by3">
-                                <img src="img/bad-relation.jpg" alt="" style="opacity: 70%;">
+                                <img src="img/relations.jpeg" alt="" style="opacity: 70%;">
                             </figure>
                         </article>
                     </div>
@@ -222,7 +222,7 @@
                             <article class="tile is-child box notification">
                                 <p class="title has-text-centered py-2 is-4">Crescita personale</p>
                                 <figure class="image is-4by3">
-                                    <img src="img/personal-growth.jpg" alt="" style="opacity: 70%;">
+                                    <img src="img/self-growth.jpg" alt="" style="opacity: 70%;">
                                 </figure>
                             </article>
                         </div>
@@ -240,16 +240,16 @@
                     <div class="tile is-parent">
                         <article class="tile is-child box notification">
                             <div class="columns">
-                                <div class="column is-one-fifth has-text-centered"><i class="title is-5 fa-solid fa-phone"></i></div>
-                                <div class="column is-four-fifths"><p class="title has-text-centered is-5">333 8978029</p> </div>
+                                <div class="column is-one-fifth has-text-centered"><i class="title is-4 fa-solid fa-phone"></i></div>
+                                <div class="column is-four-fifths"><p class="title has-text-centered is-4">333 8978029</p> </div>
                             </div>    
                         </article>                 
                     </div>
                     <div class="tile is-parent">
                         <article class="tile is-child box notification">
                             <div class="columns">
-                                <div class="column is-one-fifth has-text-centered"><i class="title is-5 fa-solid fa-envelope"></i></div>
-                                <div class="column is-four-fifths"><p class="title has-text-centered is-5">lauraromano01@outlook.it</p> </div>
+                                <div class="column is-one-fifth has-text-centered"><i class="title is-4 fa-solid fa-envelope"></i></div>
+                                <div class="column is-four-fifths"><p class="title has-text-centered is-4">lauraromano01@outlook.it</p> </div>
                             </div>    
                         </article>
                     </div>
@@ -297,12 +297,20 @@
             </div>
         <div class="container">
             <p class="title is-4">Ricevo presso</p>
-            <div class="columns box notification">
-                <div class="column is-half" style="min-height: 450px;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.014517652128!2d10.20634041545388!3d45.610352231700524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781794d39ad1841%3A0x6c6d55d6669ad230!2sCentro%20HUMANS!5e0!3m2!1sit!2sit!4v1673810021975!5m2!1sit!2sit" style="border:0; width: 100%; height: 100%; min-height: 450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="tile is-ancestor">
+                <div class="tile">
+                    <div class="tile is-parent">
+                        <div class="tile is-child box notification">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.014517652128!2d10.20634041545388!3d45.610352231700524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781794d39ad1841%3A0x6c6d55d6669ad230!2sCentro%20HUMANS!5e0!3m2!1sit!2sit!4v1673810021975!5m2!1sit!2sit" style="border:0; width: 100%; height: 100%; min-height: 450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
                 </div>
-                <div class="column is-half" style="min-height: 450px;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.0897111798577!2d10.217601815452008!3d45.548520835834154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478176467f6a0c93%3A0x984ba0ea1762858d!2sVia%20Bezzecca%2C%2010%2C%2025128%20Brescia%20BS!5e0!3m2!1sit!2sit!4v1673810322197!5m2!1sit!2sit" style="border:0; width: 100%; height: 100%; min-height: 450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="tile">
+                    <div class="tile is-parent">
+                        <div class="tile is-child box notification">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.0897111798577!2d10.217601815452008!3d45.548520835834154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478176467f6a0c93%3A0x984ba0ea1762858d!2sVia%20Bezzecca%2C%2010%2C%2025128%20Brescia%20BS!5e0!3m2!1sit!2sit!4v1673810322197!5m2!1sit!2sit" style="border:0; width: 100%; height: 100%; min-height: 450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>    
