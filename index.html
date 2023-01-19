@@ -17,8 +17,12 @@
         <nav class="navbar card block is-fixed-top" style="overflow: hidden; background-color: white;">
             <div class="container">
                 <div class="navbar-brand is-size-4">
-                    <a class="navbar-item">Dott.ssa Laura Romano</a>
-                    <span class="navbar-burger" data-target="navbarMenuHeroB" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }"></span>
+                    <a class="navbar-item" alt="Dottoressa Laura Romano">Dott.ssa Laura Romano</a>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenuHeroB" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                      </a>
                 </div>
                 <div id="navbarMenuHeroB" class="navbar-menu" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }">
                     <div class="navbar-end controls">
@@ -94,7 +98,7 @@
     </section>
     <section class="hero is-primary py-4" id="Cit">
         <div class="hero-body">
-            <div class="columns is-vcentered is-centered">
+            <div class="columns reverse-columns is-vcentered is-centered">
                 <div class="column is-two-third is-centered">
                     <p class="title is-italic is-4">
                         "Preferisco di gran lunga pensare ai miei pazienti e a me stesso come compagni di viaggio, un termine che abolisce le distinzioni tra "loro" coloro che soffrono e "noi" guaritori."
@@ -156,14 +160,14 @@
                     <div class="tile">
                         <div class="tile is-parent">
                             <div class="tile is-child box notification"></article>
-                                <div class="columns">
+                                <div class="columns reverse-columns">
                                     <div class="column is-half">
                                         <figure class="image is-center is-3by4">
                                             <img src="img/anxious2.jpg" alt="" style="opacity: 70%;">
                                         </figure>
                                     </div>
-                                    <div class="column is-vcentered is-align-items-center is-flex">
-                                        <p class="title is-centered py-2 is-4">Ansia e attacchi di panico</p>
+                                    <div class="column has-text-centered is-align-items-center is-flex">
+                                        <p class="title has-text-centered py-2 is-4">Ansia e attacchi di panico</p>
                                     </div>
                                 </div>
                             </div>
@@ -200,7 +204,7 @@
                     <div class="tile">
                        <div class="tile is-parent">
                             <div class="tile is-child box notification"></article>
-                                <div class="columns has-text-centered ">
+                                <div class="columns reverse-columns has-text-centered ">
                                     <div class="column is-half">
                                         <figure class="image is-center is-3by4">
                                             <img src="img/self-confidence.jpg" alt="" style="opacity: 70%;">
