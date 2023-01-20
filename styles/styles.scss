@@ -28,9 +28,23 @@ $link: #E29578;
   display: block;
 }
 
+.footer-cr{
+  text-align: right;
+}
+.footer-cl{
+  text-align: left;
+}
+
+
 @media(max-width: 767px) { /* <== You can change this break point as per your  needs */
     .reverse-columns {
       flex-direction: column-reverse;
       display: flex;
+    }
+    .footer-cr{
+      text-align: center !important;
+    }
+     .footer-cl{
+      text-align: center !important;
     }
   }
