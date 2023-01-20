@@ -32,6 +32,9 @@
                         <a href="#About" class="navbar-item mycontrol mycontrol-2" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }" data-target="About">
                             Chi sono
                         </a>
+                        <a href="#Cognitive" class="navbar-item mycontrol mycontrol-2" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }" data-target="About">
+                            Il mio metodo
+                        </a>           
                         <a href="#Services" class="navbar-item mycontrol mycontrol-3" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }" data-target="Services">
                             Servizi
                         </a>
@@ -124,6 +127,11 @@
             </article>
         </div>  
     </section>
+    <section class="hero mybackground py-6 is-hidden" id="Cognitive">
+        <div class="container is-vcentered is-justify-content-space-evenly px-6">
+            <p class="title is-2 is-spaced py-6">Approccio cognitivo comportamentale</p>
+        </div>
+    </section>    
     <section class="hero mybackground py-6 is-hidden" id="Services">
         <div class="container is-vcentered is-justify-content-space-evenly px-6">
             <p class="title is-2 is-spaced py-6">Mi occupo di</p>
