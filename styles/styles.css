@@ -10338,6 +10338,18 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   text-align: left;
 }
 
+.footer-cc {
+  text-align: center;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.has-text-shadow {
+  color: white !important;
+  text-shadow: 1px 1px 2px black;
+}
+
 @media (max-width: 767px) { /* <== You can change this break point as per your  needs */
   .reverse-columns {
     flex-direction: column-reverse;
@@ -10348,5 +10360,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   }
   .footer-cl {
     text-align: center !important;
+  }
+  .footer-cc {
+    max-width: none;
   }
 }/*# sourceMappingURL=styles.css.map */
